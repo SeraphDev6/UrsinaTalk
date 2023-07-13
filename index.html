@@ -1,60 +1,89 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
     <title>reveal.js</title>
 
-    <link rel="stylesheet" href="Reveal/dist/reset.css">
-    <link rel="stylesheet" href="Reveal/dist/reveal.css">
-    <link rel="stylesheet" href="Reveal/dist/theme/league.css">
+    <link rel="stylesheet" href="Reveal/dist/reset.css" />
+    <link rel="stylesheet" href="Reveal/dist/reveal.css" />
+    <link rel="stylesheet" href="Reveal/dist/theme/league.css" />
 
     <!-- Theme used for syntax highlighted code -->
-    <link rel="stylesheet" href="Reveal/plugin/highlight/monokai.css">
+    <link rel="stylesheet" href="Reveal/plugin/highlight/monokai.css" />
 
-    <link rel="stylesheet" href="Reveal/custom/css/custom.css">
+    <link rel="stylesheet" href="Reveal/custom/css/custom.css" />
   </head>
   <body>
     <div class="reveal">
       <div class="slides">
         <section id="welcome" data-auto-animate>
-          <h3>Get Your Claws into Game Development:<br>A Beginner's Guide to Ursina</h3>
-          <img src="Reveal/custom/img/BuilderBear.png" alt="A bear building a video game" class="r-stretch">
-          <p><a href="https://github.com/SeraphDev6/UrsinaTalk">https://github.com/SeraphDev6/UrsinaTalk</a></p>
+          <h3>Ursina: The python library that is more than just bear-able</h3>
+          <img
+            src="Reveal/custom/img/BuilderBear.png"
+            alt="A bear building a video game"
+            class="r-stretch"
+          />
+          <p>
+            <a href="https://github.com/SeraphDev6/UrsinaTalk"
+              >https://github.com/SeraphDev6/UrsinaTalk</a
+            >
+          </p>
         </section>
 
-        <section id="what-is-what-do"data-auto-animate>
+        <section id="what-is-what-do" data-auto-animate>
           <section id="what-is">
             <h3>what is Ursina?</h3>
             <div class="r-stretch align-center">
-              <img src="Reveal/custom/img/python-logo.png" alt="Python Logo">
-              <img src="Reveal/custom/img/ursina_chan_alpha.png" alt="Ursina Logo">
+              <img src="Reveal/custom/img/python-logo.png" alt="Python Logo" />
+              <img
+                src="Reveal/custom/img/ursina_chan_alpha.png"
+                alt="Ursina Logo"
+              />
             </div>
-            <p>Ursina is a game engine which utilizes Python to speed up game development. It utilizes panda3d to render both 2d and 3d games, and comes with a ton of features right out of the box!</p>
+            <p>
+              Ursina is a game engine which utilizes Python to speed up game
+              development. It utilizes panda3d to render both 2d and 3d games,
+              and comes with a ton of features right out of the box!
+            </p>
           </section>
           <section id="what-do">
             <h2>Like What?</h2>
           </section>
           <section id="features">
             <ul>
-              <li>Extendable Prefabs for common use cases such as First Person and 2d platformer Controllers</li>
-              <li class="fragment">A variety of prebuilt shaders and the ability to create your own custom shaders</li>
-              <li class="fragment">A MIT license so you'll never have to pay royalties to Ursina, and can modify it to fix bugs or add features</li>
-              <li class="fragment">A cute bear mascot! Plus all the cool things you can do with Python!</li>
+              <li>
+                Extendable Prefabs for common use cases such as First Person and
+                2d platformer Controllers
+              </li>
+              <li class="fragment">
+                A variety of prebuilt shaders and the ability to create your own
+                custom shaders
+              </li>
+              <li class="fragment">
+                A MIT license so you'll never have to pay royalties to Ursina,
+                and can modify it to fix bugs or add features
+              </li>
+              <li class="fragment">
+                A cute bear mascot! Plus all the cool things you can do with
+                Python!
+              </li>
               <li class="fragment">Freedom from static typing!!!</li>
             </ul>
           </section>
         </section>
         <section data-auto-animate id="how-start">
-          <h3>Getting started is super easy! </h3>
+          <h3>Getting started is super easy!</h3>
+          <p>Just run this command (and have Python 3 installed)</p>
+          <code> pip3 install -v ursina==5.2.0 </code>
           <p>
-            Just run this command (and have Python 3 installed)
+            From there you can create a main.py file! I would suggest putting it
+            in a directory, but that is up to you.
           </p>
-          <code>
-            pip3 install ursina
-          </code>
-          <p>From there you can create a main.py file! I would suggest putting it in a directory, but that is up to you.</p>
         </section>
         <section data-auto-animate id="now-code">
           <section data-markdown id="code-start">
@@ -67,11 +96,15 @@
                 app.run()
                 </code>
               </pre>
-              Now you can run `python main.py` to test the game!
+            Now you can run `python main.py` to test the game!
           </section>
           <section id="grey-screen">
             <h3>What do you see?</h3>
-            <img src="Reveal/custom/img/screenshots/01_start.png" alt="grey-screen" class="r-stretch">
+            <img
+              src="Reveal/custom/img/screenshots/01_start.png"
+              alt="grey-screen"
+              class="r-stretch"
+            />
             <p>Not much here to look at, just a grey screen</p>
           </section>
         </section>
@@ -90,18 +123,75 @@
                 app.run()
                 </code>
               </pre>
-              Now you can run `python main.py` or hit the f5 key to refresh the game!
+            Now you can run `python main.py` or hit the f5 key to refresh the
+            game!
           </section>
           <section id="see-add">
             <h3>Now we are getting somewhere!</h3>
-            <img src="Reveal/custom/img/screenshots/02_cube.png" alt="grey-screen" class="r-stretch">
+            <img
+              src="Reveal/custom/img/screenshots/02_cube.png"
+              alt="grey-screen"
+              class="r-stretch"
+            />
             <p>We can use the mouse to look around at our cube!</p>
           </section>
           <section id="why-code">
             <h3>This highlights one of the core concepts of Ursina</h3>
-            <p>In Ursina there is no GUI editor, all the building of scenes and placement of objects happens in code!</p>
-            <p>While this may seem odd to those coming from Unity or Godot, it allows you tou store your scenes with little to no memory overhead</p>
+            <p>
+              In Ursina there is no GUI editor, all the building of scenes and
+              placement of objects happens in code!
+            </p>
+            <p>
+              While this may seem odd to those coming from Unity or Godot, it
+              allows you tou store your scenes with little to no memory overhead
+            </p>
           </section>
+        </section>
+        <section id="Inheritance_Good" data-auto-animate>
+          <section id="Entities">
+            <h3>
+              Most classes in Ursina inherit from the <code>Entity</code> class
+            </h3>
+            <p>
+              We've actually already seen an example of an Entity with our cube
+            </p>
+            <p>
+              All Entities can take any number of key word arguments, such as
+              <code>model="cube"</code> or <code>rotation=(45, 0, 45)</code>
+            </p>
+          </section>
+          <section id="Update_cubert" data-auto-animate>
+            <h3>
+              Let's add an addition kwarg to our Cube by adding the following
+              inside the parenthesis
+            </h3>
+            <code>spin_rate=(10,10,-10)</code>
+            <p>Now run the game again and see what happens!</p>
+          </section>
+        </section>
+        <section id="Understanding_Update" data-auto-animate> 
+            <h3>Nothing Happened!</h3>
+            <p>
+              Thats because we are simply storing the tuple
+              <code>(10,10,-10)</code> in the Entity as a attribute. In order to
+              make something happen, we need to use one of Ursina's Magic
+              Functions
+            </p>
+            <h4><code>update()</code>!!</h4>
+          </section>
+          <section data-auto-animate data-markdown id="fixed">
+              ### We do this by defining an update function in our main.py file
+            <pre class="brush: python">
+              <code data-trim data-noescape >
+              def update():
+                for entity in scene.entities:
+                  if hasattr(entity, "spin_rate"):
+                      entity.rotation += Vec3(*entity.spin_rate) * time.dt
+            </code>
+          </pre>
+        </section>
+        <section>
+          <h4>Let dive into some actual examples!</h4>
         </section>
       </div>
     </div>
@@ -118,10 +208,10 @@
         hash: true,
         // navigationMode: "grid",
         highlight: {
-            beforeHighlight: hljs => hljs.configure({languages: ["python"]})
-          },
+          beforeHighlight: (hljs) => hljs.configure({ languages: ["python"] }),
+        },
         // Learn about plugins: https://revealjs.com/plugins/
-        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
       });
     </script>
   </body>
